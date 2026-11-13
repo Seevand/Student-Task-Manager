@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="fa-IR" dir="rtl">
+<head>
+    <!-- designer : Mobin Hasankhani -->
+    <!-- theme Name : Student Task Manager -->
+    <!-- Bootstrap CSS -->
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="./css/stule.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <title> مدیریت وظیفه دانش آموزان </title>
+</head>
+
+<body>
+
+<nav class="navbar bg-1 fg-2">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/images/Logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top gap-5">
+      مدیریت وظایف دانش آموزان - تمرین شماره 1
+    </a>
+<div>
+    <span class="me-3"> کاربر مدیر </span>
+    <span class="avatar">
+  <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+</span>
+</div>
+</div>
+</nav>
+
+    <div class="container ">
+
+     <div class="headnone d-flex align-content-between flex-wrap mt-10 mb-3">
+      <h2> وظایف درانتظار انجام </h2>
+      <button type="button" class="btn-subtle theme-info" data-bs-toggle="dialog" data-bs-target="#add-dialog"> افزودن وظیفه </button>
+     </div>
+
+<table class="table table-striped table-hover mb-10">
+  <thead>
+    <tr>
+      <th scope="col"> ردیف </th>
+      <th scope="col"> وظیفه </th>
+      <th scope="col"> زمان انجام </th>
+      <th scope="col"> مدیر وظیفه </th>
+      <th scope="col"> عملیات </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> پرداخت شهریه </td>
+      <td> 5 روز </td>
+      <td> کاربر مدیر </td>
+      <td>
+        
+<button type="button" class="btn-subtle theme-primary" data-bs-toggle="dialog" data-bs-target="#edit-dialog">ویرایش</button>
+      
+<button type="button" class="btn-subtle theme-danger" data-bs-toggle="dialog" data-bs-target="#delet-dialog">حذف</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+    
+        <div class="container">
+
+        <h2 class="mt-10 mb-3"> وظایف انجام شده </h2>
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col"> ردیف </th>
+      <th scope="col"> وظیفه </th>
+      <th scope="col"> زمان انجام </th>
+      <th scope="col"> مدیر وظیفه </th>
+      <th scope="col"> انجام دهنده </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> پرداخت شهریه </td>
+      <td> 5 روز </td>
+      <td> کاربر مدیر </td>
+      <td> کاربر مبین </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+
+
+
+<dialog class="dialog" id="add-dialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title"> افزودن وظیفه </h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+<form>
+  <div class="mb-3">
+    <label for="exampletaskid" class="form-label"> عنوان وظیفه </label>
+    <input type="text" class="form-control" id="exampletaskid" aria-describedby="tasktitle">
+  </div>
+  <div class="mb-3">
+    <label for="exampletaskid" class="form-label"> زمان وظیفه </label>
+    <input type="text" class="form-control" id="exampletaskid" aria-describedby="tasktitle">
+  </div>
+</form>  </div>
+  <div class="dialog-footer" dir="ltr">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog"> لغو </button>
+    <button type="button" class="btn-solid theme-primary"> تایید و ذخیره </button>
+  </div>
+</dialog>
+
+<dialog class="dialog" id="edit-dialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title"> تایید انجام </h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+<form>
+  <div class="mb-3">
+    <label for="exampletaskid" class="form-label"> عنوان وظیفه </label>
+    <input type="text" class="form-control" id="exampletaskid" aria-describedby="tasktitle">
+  </div>
+  <div class="mb-3">
+    <label for="exampletaskid" class="form-label"> زمان وظیفه </label>
+    <input type="text" class="form-control" id="exampletaskid" aria-describedby="tasktitle">
+  </div>
+</form>  </div>
+  <div class="dialog-footer" dir="ltr">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog"> لغو </button>
+    <button type="button" class="btn-solid theme-primary"> تایید و ذخیره </button>
+  </div>
+</dialog>
+
+<dialog class="dialog" id="delet-dialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title"> حذف وظیفه </h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p> آیا از حذف این وظیفه اطمینان دارید؟! </p>
+  </div>
+  <div class="dialog-footer" dir="ltr">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog"> لغو </button>
+    <button type="button" class="btn-solid theme-primary"> تایید و ذخیره </button>
+  </div>
+</dialog>
+        
+        
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+:root {
+    --tg-body-font-size: 16px;
+    --tg-body-line-height: 1.75;
+    --tg-heading-line-height: 1.2;
+    --tg-common-color-blue: #0d6efd;
+    --tg-common-color-indigo: #6610f2;
+    --tg-common-color-purple: #6f42c1;
+    --tg-common-color-pink: #d63384;
+    --tg-common-color-red: #dc3545;
+    --tg-common-color-orange: #fd7e14;
+    --tg-common-color-yellow: #ffc107;
+    --tg-common-color-green: #198754;
+    --tg-common-color-teal: #68fb9a;
+    --tg-common-color-cyan: #0dcaf0;
+    --tg-common-color-rating: #faa706;
+    --tg-common-color-white: #fff;
+    --tg-common-color-gray: #251F28;
+    --tg-common-color-black: #251F28;
+    --tg-common-color-black-2: #201f2a;
+    --tg-common-color-black-3: #0b0e13;
+    --tg-common-color-black-4: #10181f;
+    --tg-common-color-black-5: #090d10;
+    --tg-common-color-black-6: #050506;
+    --tg-common-color-black-7: #040608;
+    --tg-common-color-black-8: #0d141b;
+    --tg-common-color-black-9: #111922;
+    --tg-body-color: #adb0bc;
+    --tg-heading-color: #fff;
+    --tg-theme-primary: #29A0B1;
+    --tg-theme-secondary: #ffbe18;
+    --tg-border-1: #19222b;
+    --tg-border-2: #22292f;
+    --tg-border-3: #2c3137;
+    --tg-border-4: #333333;
+    --tg-border-5: #1b242e;
+    --tg-fw-extra-bold: 800;
+    --tg-fw-bold: 700;
+    --tg-fw-semi-bold: 600;
+    --tg-fw-medium: 500;
+    --tg-fw-regular: 400;
+    --tg-fw-light: 300;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Iransans;
+    color: var(--tg-common-color-gray);
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: inherit;
+}
+
+.headnone {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@font-face {
+    font-family: Iransans;
+    src: url(../fonts/IRANSansWeb.ttf);
+}
