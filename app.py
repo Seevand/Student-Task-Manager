@@ -267,14 +267,12 @@ def edit_task(task_id):
         )
 
     else:
-
         flash(
             "وظیفه پیدا نشد یا قبلاً انجام شده است.",
             "warning"
         )
 
     return redirect(url_for("admin_panel"))
-
 
 @app.post("/admin/tasks/<task_id>/delete")
 def delete_task(task_id):
@@ -289,7 +287,7 @@ def delete_task(task_id):
         ]
 
         return len(tasks) < before
-
+    
     result = update_tasks(delete)
 
     if result:
@@ -344,7 +342,6 @@ def complete_task(task_id):
         )
 
     else:
-
         flash(
             "این وظیفه وجود ندارد یا قبلاً تکمیل شده است.",
             "warning"
@@ -352,12 +349,10 @@ def complete_task(task_id):
 
     return redirect(url_for("index"))
 
-
 @app.errorhandler(404)
 def not_found(error):
 
     return "صفحه یا وظیفه موردنظر پیدا نشد.", 404
-
 
 if __name__ == "__main__":
 
