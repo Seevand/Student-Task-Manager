@@ -59,6 +59,13 @@ body {
     justify-content: space-between;
 }
 
+.profile-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 @font-face {
     font-family: 'IRANSans';
